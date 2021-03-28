@@ -1,0 +1,83 @@
+*{
+  padding : 0;
+  margin : 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  background : rgb(233, 229, 229);
+  height : 100vh;
+  background: cover;
+  background-attachment: fixed;
+}
+header {
+  height : 100px;
+}
+header .logo{
+  float : left;
+  line-height : 100px;
+  padding-left : 40px;
+  color : rgb(0, 100, 250);
+  font-weight: normal;
+}
+header .menu{
+  float : right;
+  line-height : 100px;
+}
+header .menu a{
+  padding-right : 20px;
+  font-size : 20px;
+  text-decoration: none;
+  color :rgb(0, 100, 250);
+  transition: 0.5s linear;
+}
+header .menu a:hover{
+  color : black;
+}
+
+.then{
+  padding-top : 310px;
+}
+.resume{
+  float : right;
+  transform: translateY(-700px);
+  width : 700px;
+}
+.text {
+  width : 500px;
+  transform: translateY(-520px);
+  padding-left : 50px; 
+}
+.text p {
+  color : gray;
+}
+.text button{
+  margin-top : 20px;
+  padding : 15px;
+  font-size : 17px;
+  background : none;
+  outline : none;
+  border : 0;
+  background : rgb(8, 170, 224);
+  color : white;
+  transition: 0.3s ease;
+  cursor : pointer;
+}
+.text button:hover{
+  background : rgb(3, 119, 158);
+  transform : translateY(-3px);
+}
+@media screen and (max-width : 1000px) {
+
+  .then{
+      width : 0;
+   }
+   .resume{
+     text-align : center;
+     width : 500px;
+     transform : translateY(-200px);
+   }
+   .text {
+      margin-top : 750px;
+   }
+}
